@@ -3,7 +3,7 @@ terraform {
   backend "s3" {
     bucket         = "terraform-state-storage-977306314792"
     dynamodb_table = "terraform-state-lock-977306314792"
-    key            = "hw-fargate-api-stg/app.tfstate"
+    key            = "understanding-fargate-stg/app.tfstate"
     region         = "us-west-2"
   }
 }
@@ -22,7 +22,7 @@ module "app" {
   env                              = "stg"
   image_tag                        = var.image_tag
   codedeploy_termination_wait_time = 0
-  deploy_test_postman_collection   = "../../../.postman/hw-fargate-api.postman_collection.json"
+  deploy_test_postman_collection   = "../../../.postman/understanding-fargate.postman_collection.json"
   deploy_test_postman_environment  = "../../../.postman/stg-tst.postman_environment.json"
 }
 

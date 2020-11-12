@@ -19,7 +19,7 @@ variable "deploy_test_postman_environment" {
 }
 
 locals {
-  name = "hw-fargate-api"
+  name = "understanding-fargate"
   tags = {
     env              = "${var.env}"
     data-sensitivity = "public"

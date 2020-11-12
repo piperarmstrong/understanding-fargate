@@ -1,4 +1,4 @@
-# hw-fargate-api
+# understanding-fargate
 Example of creating and deploying an API with Docker and Terraform on AWS.
 
 ## Prerequisites
@@ -9,11 +9,11 @@ Example of creating and deploying an API with Docker and Terraform on AWS.
 * Ensure your account has a [Terraform State S3 Backend](https://github.com/byu-oit/terraform-aws-backend-s3) deployed.
 
 ## Setup
-* Create a new repo [using this template](https://github.com/byu-oit/hw-fargate-api/generate).
+* Create a new repo [using this template](https://github.com/byu-oit/understanding-fargate/generate).
 
   You need your own repo so that you can push changes and have GitHub Actions deploy them.
   
-  Keep your repo name relatively short. Since we're creating AWS resources based off the name, we've seen [issues with repo names longer than about 24 characters](https://github.com/byu-oit/hw-fargate-api/issues/22).
+  Keep your repo name relatively short. Since we're creating AWS resources based off the name, we've seen [issues with repo names longer than about 24 characters](https://github.com/byu-oit/understanding-fargate/issues/22).
 
 * Clone your new repo
 ```
@@ -26,13 +26,13 @@ git checkout -b dev
 ```
 * Find and replace across the repo:
   * replace `977306314792` with your dev AWS account number
-  * replace `539738229445` with your prd AWS account number
-  * replace `hw-fargate-api` with the name of your repo
-  * rename the `.postman/hw-fargate-api.postman_collection.json` file with the name of your repo
+  * replace `639906780254` with your prd AWS account number
+  * replace `understanding-fargate` with the name of your repo
+  * rename the `.postman/understanding-fargate.postman_collection.json` file with the name of your repo
   * replace `byu-oit-terraform-dev` with the name of your `dev` AWS account
   * replace `byu_oit_terraform_dev` with the name of your `dev` AWS account (with underscores)
-  * replace `byu-oit-terraform-prd` with the name of your `prd` AWS account
-  * replace `byu_oit_terraform_prd` with the name of your `prd` AWS account (with underscores)
+  * replace `byu-dept-csresearchtmunderstanding-dev` with the name of your `prd` AWS account
+  * replace `byu_dept_csresearchtmunderstanding_dev` with the name of your `prd` AWS account (with underscores)
 * Commit/push your changes
 ```
 git commit -am "update template with repo specific details" 

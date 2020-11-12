@@ -1,8 +1,8 @@
 terraform {
   backend "s3" {
-    bucket         = "terraform-state-storage-539738229445"
-    dynamodb_table = "terraform-state-lock-539738229445"
-    key            = "hw-fargate-api-cpy/ecr.tfstate"
+    bucket         = "terraform-state-storage-639906780254"
+    dynamodb_table = "terraform-state-lock-639906780254"
+    key            = "understanding-fargate-cpy/ecr.tfstate"
     region         = "us-west-2"
   }
 }
