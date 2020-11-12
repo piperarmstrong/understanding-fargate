@@ -13,33 +13,33 @@ jobs:
     name: Set Env Vars
     runs-on: ubuntu-latest
     steps:
-      - name: Set up DEV Environment Variables
-        if: github.base_ref == 'dev'
-        run: |
-          matrix='{
-            "env":[
-              {
-                "tf_working_dir":"./terraform-iac/dev/app",
-                "aws_key_name":"byu_oit_terraform_dev_key",
-                "aws_secret_name":"byu_oit_terraform_dev_secret"
-              }
-            ]
-          }'
-          echo matrix=`echo $matrix | jq -c .` >> $GITHUB_ENV
+    #  - name: Set up DEV Environment Variables
+    #    if: github.base_ref == 'dev'
+    #    run: |
+    #      matrix='{
+    #        "env":[
+    #          {
+    #            "tf_working_dir":"./terraform-iac/dev/app",
+    #            "aws_key_name":"byu_oit_terraform_dev_key",
+    #            "aws_secret_name":"byu_oit_terraform_dev_secret"
+    #          }
+    #        ]
+    #      }'
+    #      echo matrix=`echo $matrix | jq -c .` >> $GITHUB_ENV
 
-      - name: Set up STG Environment Variables
-        if: github.base_ref == 'stg'
-        run: |
-          matrix='{
-            "env":[
-              {
-                "tf_working_dir":"./terraform-iac/stg/app",
-                "aws_key_name":"byu_oit_terraform_dev_key",
-                "aws_secret_name":"byu_oit_terraform_dev_secret"
-              }
-            ]
-          }'
-          echo matrix=`echo $matrix | jq -c .` >> $GITHUB_ENV
+    #  - name: Set up STG Environment Variables
+    #    if: github.base_ref == 'stg'
+    #    run: |
+    #      matrix='{
+    #        "env":[
+    #          {
+    #            "tf_working_dir":"./terraform-iac/stg/app",
+    #            "aws_key_name":"byu_oit_terraform_dev_key",
+    #            "aws_secret_name":"byu_oit_terraform_dev_secret"
+    #          }
+    #        ]
+    #      }'
+    #      echo matrix=`echo $matrix | jq -c .` >> $GITHUB_ENV
 
       - name: Set up PRD/CPY Environment Variables
         if: github.base_ref == 'master'

@@ -18,7 +18,7 @@
     "type": "git",
     "url": "git+https://github.com/byu-oit/hello-world-docker-api.git"
   },
-  "author": "",
+  "author": "G",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/byu-oit/hello-world-docker-api/issues"
