@@ -66,8 +66,8 @@ jobs:
                 "aws_secret_name":"byu_dept_csresearchtmunderstanding_dev_secret",
                 "rfc_key_name":"standard_change_sandbox_client_key",
                 "rfc_secret_name":"standard_change_sandbox_client_secret",
-                "rfc_template_id":"Codepipeline-Standard-Change",
-                "slack_channel":"#slack-bot-testing"
+                "rfc_template_id":"Codepipeline-Standard-Change"#,
+                #"slack_channel":"#slack-bot-testing"
               },
               {
                 "ecr_repo_name":"understanding-fargate-cpy",
@@ -76,8 +76,8 @@ jobs:
                 "aws_secret_name":"byu_dept_csresearchtmunderstanding_dev_secret",
                 "rfc_key_name":"standard_change_sandbox_client_key",
                 "rfc_secret_name":"standard_change_sandbox_client_secret",
-                "rfc_template_id":"Codepipeline-Standard-Change",
-                "slack_channel":"#slack-bot-testing"
+                "rfc_template_id":"Codepipeline-Standard-Change"#,
+                #"slack_channel":"#slack-bot-testing"
               }
             ]
           }'
